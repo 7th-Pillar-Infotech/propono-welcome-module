@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propono Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tab-container">
+      <button class="tab-button active" data-tab="collect">1</button>
+      <button class="tab-button" data-tab="friends">2</button>
+      <button class="tab-button" data-tab="critics">3</button>
+      <button class="tab-button" data-tab="checkin">4</button>
+      <button class="tab-button" data-tab="compare">5</button>
+    </div>
+    <div class="content-heading-container">
+      <div id="logo" class="svg-background"></div>
+      <div id="content-heading" class="content-heading-text">Collect</div>
+      <div id="content-heading" class="content-heading-text-hidd">Collect</div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div id="content-area">
+          <!-- Default content (Collect section) -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll(".tab-button");
+      const contentArea = document.getElementById("content-area");
+      const contentHeading = document.getElementById("content-heading");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+          updateContent(button.getAttribute("data-tab"));
+        });
+      });
+
+      function updateContent(tab) {
+        let content = "";
+        let heading = "";
+
+        switch (tab) {
+          case "collect":
+            content = `
+            <div class="friend-container">
+                <div>
+                      <p class="friend-header font-size">Welcome to Propono</p>
+                    <div class="compare-image-container">
+                        <div id="welcome-image" class="welcome-image"></div>
+                    </div>
+                    <p class="friend-sub-header align">Your personal restaurant guide<br/>powered by friends and foodies.</p>
+                </div>
+                <div class="collect-main-container">
+                   <div class="collect-main"></div>
+                </div>
+                <div>
+                    <div class="collect-svg-container">
+                        <div id="collect-image" class="collect-image"></div>
+                        <div id="collect-Introducing" class="collect-Introducing">Introducing</div>
+                        <div id="collect-top-left-svg" class="collect-top-left-svg"></div>
+                        <div id="collect-easy-place" class="collect-easy-place">Its easy to add place you<br/>want to remember. It's like<br/>a bookmark.</div>
+                        <div id="collect-tap-to-try" class="collect-tap-to-try">Just tap to add to your<br/>"Want to Try" album</div>
+                        <div id="collect-custom-album" class="collect-custom-album">...or any custom<br/>album you've created.</div>
+                        <div id="collect-your-saved-place" class="collect-your-saved-place">Your saved places automatically<br/>pop up in searches and stand out,<br/>ensuring <b>once collected, never<br/>forgetten.</b></div>
+                    </div>
+                </div>    
+                <div class="friend-footer">
+                    <button class="button-large" onclick="switchTab('friends')">Friend Power
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            `;
+            heading = "Collect";
+            break;
+          case "friends":
+            content = `
+            <div class="friend-container">
+             <div>
+                <p class="friend-header">Propono shines brighter <br/> with friends</p>
+                <div class="friend-image-container">
+                    <div id="friend-image" class="friend-image"></div>
+                </div>
+                <p class="friend-sub-header">Connect with friends and share favorite <br/> albums for instant inspiration from a source <br/> you trust.</p>
+             </div>
+              <div>
+                 <img src="./assets/Album-following.png" class="responsive-img" alt="Album Following" />
+                 <p class="friend-sub-header-small">When browsing and searching, you'll<br/>your friend's trusted review first.</p>
+                <img src="./assets/Friend-rating.png" class="responsive-img" alt="Friend Rating" />
+             </div>
+             <div class="friend-footer">
+                 <p class="friend-sub-header-small">Your <b class="extra-bold">taste buds</b> (aka your foodie friends)<br/> are just a tap away.</p>
+                 <button class="button-large" onclick="switchTab('critics')">Critics' Choices
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                 </button>
+             </div>
+            </div>
+            `;
+            heading = "Friend Power";
+            break;
+          case "critics":
+            content = `
+               <div class="friend-container">
+             <div>
+                <p class="friend-header">Pro reviews a tap away</p>
+                <p class="friend-sub-header">We've pulled together reviews from top critics<br/>like Michelin Guide, Eater, New York Times,<br/>and more</p>
+             </div>
+              <div>
+                 <img src="./assets/Critics-publications.png" class="responsive-img" alt="Album Following" />
+                 <p class="comapre-sub-header-small">Get a taste of expert opinios to consider<br/>when making your dining decisions</p>
+                <img src="./assets/POI-critics.png" class="responsive-img" alt="Friend Rating" />
+                 <p class="critics-sub-header-small">...and link through<br/>to the full review.</p>
+                 <img src="./assets/Critics-list.png" class="responsive-img margin-bottom" alt="Friend Rating" />
+             </div>
+             <div class="friend-footer">
+                 <button class="button-large" onclick="switchTab('checkin')">Collect Memories
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                 </button>
+             </div>
+            </div>
+            `;
+            heading = "Critics' Choice";
+            break;
+          case "checkin":
+            content = `
+              <div class="checkin-container">
+             <div class ="check-in-sub-container">
+                <div class="friend-image-container center">
+                    <div id="check-in-image" class="check-in-image center"></div> 
+                </div>
+                  <p class="checkin-header">Memories.</p>
+             </div>
+              <div>
+                 <p class="friend-sub-header-small checkin-text">Use <b>Check-in</b> to build your personal food map</br>and remember standout places.</p>
+                 <img src="./assets/Checkin-modal.png" class="responsive-img" alt="Album Following" />
+                 <p class="friend-sub-header-small checkin-text-two">Add a <b>memory</b> - and <b>tag</b> the friends that <br/>made it memorable.</p>
+                  <img src="./assets/Check-in-tab.png" class="responsive-img" alt="Album Following" />
+             </div>
+             <div class="friend-footer">
+                 <button class="button-large" onclick="switchTab('compare')">Compare & Share
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                 </button>
+             </div>
+            </div>
+            `;
+            heading = "Check-In";
+            break;
+          case "compare":
+            content = `
+              <div class="friend-container">
+             <div>
+                <p class="friend-header">Considering a few spots?</p>
+                <div class="compare-image-container">
+                    <div id="comapre-image" class="comapre-image"></div>
+                </div>
+                <p class="friend-sub-header">Click the compare button on place you're<br/>Considering</p>
+             </div>
+              <div>
+                 <img src="./assets/Compare-button.png" class="responsive-img" alt="Album Following" />
+                 <p class="comapre-sub-header-small">And when you're ready, view <br/>you're options side-by-side.</p>
+                <img src="./assets/Compare-full.png" class="responsive-img margin-bottom" alt="Friend Rating" />
+             </div>
+            </div>
+            `;
+            heading = "Compare";
+            break;
+        }
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+        contentArea.innerHTML = content;
+        contentHeading.textContent = heading;
+      }
+
+      function switchTab(tabName) {
+        const targetButton = document.querySelector(
+          `.tab-button[data-tab="${tabName}"]`
+        );
+
+        if (targetButton) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+          targetButton.click();
+        }
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        updateContent("collect");
+      });
+    </script>
+  </body>
+</html>
