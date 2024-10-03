@@ -26,6 +26,18 @@ body {
   background-color: #f4f6f8;
 }
 
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("./logo.svg") url("./assets/Friends.svg")
+    url("./assets/Check-in-photo.png") url("./assets/Comparebutton.svg")
+    url("./assets/Welcome-image.png") url("./assets/Mask-group.svg")
+    url("./assets/Introducing.svg");
+}
+
 .container {
   max-width: 500px;
   background-color: white;
@@ -73,11 +85,11 @@ body {
 }
 
 .tab-button:has(+ .active) {
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 12px;
 }
 
 .tab-button.active + .tab-button {
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 12px;
 }
 
 .tab-button.active {
@@ -113,7 +125,7 @@ body {
   margin-top: 20px;
 }
 .content-heading {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #6744c9;
@@ -150,7 +162,7 @@ body {
 }
 
 .friend-header {
-  font-size: 24px;
+  font-size: 22px;
   color: #6744c9 !important;
   font-weight: 600;
   margin: 0 0 10px; /* Reduced margin below */
@@ -158,13 +170,13 @@ body {
 
 .checkin-header {
   position: absolute;
-  font-size: 24px;
+  font-size: 22px;
   color: #6744c9 !important;
   font-weight: 600;
   margin: 0 0 10px; /* Reduced margin below */
   bottom: 10px; /* Adjust as needed */
-  left: 34%;
-  top: 80px;
+  left: 31%;
+  top: 75px;
 }
 
 .friend-image {
@@ -219,7 +231,7 @@ body {
 .collect-top-left-svg {
   position: absolute;
   top: -50px;
-  left: 10px;
+  left: -10px;
   width: 190px;
   height: 150px;
   background-image: url("./assets/Introducing.svg");
@@ -230,7 +242,7 @@ body {
 .collect-Introducing {
   position: absolute;
   top: -35px;
-  left: 150px;
+  left: 130px;
   font-size: 23px;
   color: #6744c9;
   font-weight: 600;
@@ -238,43 +250,43 @@ body {
 
 .collect-easy-place {
   position: absolute;
-  top: 55px;
-  left: 150px;
+  top: 50px;
+  left: 130px;
   text-align: start;
-  font-size: 14px;
+  font-size: 12px;
   color: #212b36 !important;
 }
 
 .collect-tap-to-try {
   position: absolute;
-  top: 340px;
+  top: 290px;
   left: 55px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #212b36 !important;
 }
 
 .collect-custom-album {
   position: absolute;
-  top: 610px;
-  left: 50px;
-  text-align: center;
-  font-size: 14px;
+  top: 530px;
+  left: 45px;
+  text-align: start;
+  font-size: 12px;
   color: #212b36 !important;
 }
 
 .collect-your-saved-place {
   position: absolute;
-  top: 790px;
+  top: 690px;
   left: 20px;
   text-align: start;
-  font-size: 14px;
+  font-size: 12px;
   color: #212b36 !important;
 }
 
 .friend-sub-header {
-  padding-left: 14px;
-  font-size: 14px;
+  padding-left: 12px;
+  font-size: 12px;
   color: #212b36 !important;
   text-align: start;
   font-weight: 100;
@@ -282,31 +294,31 @@ body {
 }
 
 .friend-sub-header-small {
-  font-size: 14px;
+  font-size: 12px;
   color: #212b36 !important;
   text-align: start;
   font-weight: lighter;
-  padding-left: 14px;
+  padding-left: 12px;
   margin-bottom: 10px;
 }
 
 .comapre-sub-header-small {
-  font-size: 14px;
+  font-size: 12px;
   color: #212b36 !important;
   text-align: start;
   margin-top: 17px;
   font-weight: lighter;
-  padding-left: 14px;
+  padding-left: 12px;
   margin-bottom: 12px;
 }
 
 .critics-sub-header-small {
-  font-size: 14px;
+  font-size: 12px;
   color: #212b36 !important;
   text-align: start;
   margin-top: 0 !important;
   font-weight: lighter;
-  padding-left: 14px;
+  padding-left: 12px;
   margin-left: 50px;
   margin-bottom: 12px;
 }
@@ -389,9 +401,8 @@ body {
 }
 
 .font-size {
-  font-size: 32px !important;
+  font-size: 28px !important;
   font-weight: 600 !important;
-  letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
