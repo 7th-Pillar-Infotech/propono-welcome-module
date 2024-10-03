@@ -211,9 +211,24 @@ body::after {
   background-size: contain;
 }
 
+.welcome-text-section {
+  width: 90vw;
+  height: 50px;
+  background-image: url("./assets/Welcome-text.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.welcome-text-section-container {
+  padding-left: 5vw;
+  display: flex;
+  align-items: center !important;
+  justify-self: center !important;
+}
+
 .collect-image {
   width: 90vw;
-  height: 900px;
+  height: 800px;
   background-image: url("./assets/Mask-group.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -225,7 +240,7 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 900px;
+  height: 800px;
 }
 
 .collect-top-left-svg {
