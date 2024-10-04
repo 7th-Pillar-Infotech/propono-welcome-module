@@ -123,7 +123,7 @@ body::after {
   font-size: 14px;
   cursor: pointer;
   border-radius: 50px;
-  font-family: "AzoSans", sans-serif;
+  font-family: "AzoSans", sans-serif !important;
   margin-top: 20px;
 }
 .content-heading {
@@ -177,7 +177,7 @@ body::after {
   font-weight: 600;
   margin: 0 0 10px; /* Reduced margin below */
   bottom: 10px; /* Adjust as needed */
-  left: 31%;
+  left: 33%;
   top: 75px;
 }
 
@@ -339,7 +339,7 @@ body::after {
 
 .friend-sub-header {
   padding-left: 12px;
-  font-size: 12px;
+  font-size: 13px;
   color: #212b36 !important;
   text-align: start;
   font-weight: 500;
@@ -347,30 +347,30 @@ body::after {
 }
 
 .friend-sub-header-small {
-  font-size: 12px;
+  font-size: 13px;
   color: #212b36 !important;
   text-align: start;
-  font-weight: lighter;
+  font-weight: 500;
   padding-left: 12px;
   margin-bottom: 10px;
 }
 
 .comapre-sub-header-small {
-  font-size: 12px;
+  font-size: 13px;
   color: #212b36 !important;
   text-align: start;
   margin-top: 17px;
-  font-weight: lighter;
+  font-weight: 500;
   padding-left: 12px;
   margin-bottom: 12px;
 }
 
 .critics-sub-header-small {
-  font-size: 12px;
+  font-size: 13px;
   color: #212b36 !important;
   text-align: start;
   margin-top: 0 !important;
-  font-weight: lighter;
+  font-weight: 500;
   padding-left: 12px;
   margin-left: 50px;
   margin-bottom: 12px;
@@ -474,4 +474,8 @@ body::after {
 
 .margin-top-collect {
   margin-top: 50px;
+}
+
+.memories-font-size {
+  font-size: 20px !important;
 }
