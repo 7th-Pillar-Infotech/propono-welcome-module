@@ -246,7 +246,7 @@ body::after {
 }
 
 .collect-introducing {
-  font-size: 23px;
+  font-size: 21px;
   color: #6744c9;
   font-weight: 600;
 }
@@ -259,15 +259,11 @@ body::after {
 }
 
 .collect-top-right {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-}
-
-.collect-button-height {
-  height: 45px;
 }
 
 .colect-restaurant-card-main {
@@ -334,7 +330,7 @@ body::after {
   padding-left: 20px;
   color: #212b36 !important;
   font-family: "AzoSans", sans-serif !important;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .friend-sub-header {
@@ -478,4 +474,24 @@ body::after {
 
 .memories-font-size {
   font-size: 20px !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.collect-button-height-absolute {
+  position: absolute;
+  width: 63%;
+  height: 1100px;
+  top: 24.5%;
+  left: 35%;
+  background-image: url("./assets/connecting_line.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+
+.collect-button-height {
+  min-height: 65px !important;
 }
