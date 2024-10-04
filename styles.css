@@ -22,7 +22,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "AzoSans", sans-serif;
+  font-family: "AzoSans", sans-serif !important;
   background-color: #f4f6f8;
 }
 
@@ -34,11 +34,13 @@ body::after {
   z-index: -1;
   content: url("./logo.svg") url("./assets/Friends.svg")
     url("./assets/Check-in-photo.png") url("./assets/Comparebutton.svg")
-    url("./assets/Welcome-image.png") url("./assets/Mask-group.svg")
-    url("./assets/Introducing.svg");
+    url("./assets/Welcome\ to\ Propono.png") url("./assets/Group\ 47493.svg")
+    url("./assets/Introducing.svg") url("./assets/Collect-modal.png")
+    url("./assets/Collect-album-custom.png");
 }
 
 .container {
+  font-family: "AzoSans", sans-serif !important;
   max-width: 500px;
   background-color: white;
   border-radius: 10px;
@@ -212,91 +214,126 @@ body::after {
 }
 
 .welcome-text-section {
-  width: 90vw;
-  height: 50px;
-  background-image: url("./assets/Welcome-text.svg");
+  width: 100vh;
+  aspect-ratio: 5/1;
+  background-image: url("./assets/Welcome\ to\ Propono.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .welcome-text-section-container {
-  padding-left: 5vw;
+  padding: 0 20px 0 20px !important;
   display: flex;
   align-items: center !important;
   justify-self: center !important;
 }
 
-.collect-image {
-  width: 90vw;
-  height: 800px;
-  background-image: url("./assets/Mask-group.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.collect-svg-container {
-  position: relative;
-  margin-top: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 800px;
-}
-
-.collect-top-left-svg {
-  position: absolute;
-  top: -50px;
-  left: -10px;
-  width: 190px;
+.welcome-image-left {
+  width: 180px;
   height: 150px;
   background-image: url("./assets/Introducing.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.collect-Introducing {
-  position: absolute;
-  top: -35px;
-  left: 130px;
+.top-main {
+  width: 100vw;
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.collect-introducing {
   font-size: 23px;
   color: #6744c9;
   font-weight: 600;
 }
 
-.collect-easy-place {
-  position: absolute;
-  top: 50px;
-  left: 130px;
+.collect-personal-restaurant {
   text-align: start;
-  font-size: 12px;
+  font-size: 13px;
   color: #212b36 !important;
+  font-family: "AzoSans", sans-serif !important;
 }
 
-.collect-tap-to-try {
-  position: absolute;
-  top: 290px;
-  left: 55px;
-  text-align: center;
-  font-size: 12px;
-  color: #212b36 !important;
+.collect-top-right {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.collect-custom-album {
-  position: absolute;
-  top: 530px;
-  left: 45px;
-  text-align: start;
-  font-size: 12px;
-  color: #212b36 !important;
+.collect-button-height {
+  height: 45px;
 }
 
-.collect-your-saved-place {
-  position: absolute;
-  top: 690px;
-  left: 20px;
+.colect-restaurant-card-main {
+  position: relative;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.colect-restaurant-card-main-img-container {
+  width: 100%;
+}
+
+.colect-restaurant-card-main-img {
+  width: 100%;
+  aspect-ratio: 5/4;
+  background-image: url("./assets/Group\ 47493.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.colect-restaurant-card-main {
+  position: relative;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.colect-modal-card-main-img-container {
+  width: 100vw !important;
+}
+
+.colect-modal-card-main-img {
+  width: 100%;
+  aspect-ratio: 5/2.7;
+  background-image: url("./assets/Collect-modal.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.collect-modal-text {
   text-align: start;
-  font-size: 12px;
+  font-size: 13px;
+  padding-left: 30px;
+  margin-bottom: 20px;
   color: #212b36 !important;
+  font-family: "AzoSans", sans-serif !important;
+}
+
+.colect-album-card-main-img-container {
+  width: 100vw !important;
+}
+
+.colect-album-card-main-img {
+  width: 100%;
+  aspect-ratio: 5/1.6;
+  background-image: url("./assets/Collect-album-custom.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.collect-album-text {
+  text-align: start;
+  font-size: 13px;
+  padding-left: 20px;
+  color: #212b36 !important;
+  font-family: "AzoSans", sans-serif !important;
+  margin-bottom: 50px;
 }
 
 .friend-sub-header {
@@ -304,7 +341,7 @@ body::after {
   font-size: 12px;
   color: #212b36 !important;
   text-align: start;
-  font-weight: 100;
+  font-weight: 500;
   margin: 0 0 10px !important; /* Reduced margin above */
 }
 
@@ -388,8 +425,7 @@ body::after {
 }
 
 .div,
-.p,
-.span {
+.p {
   font-family: "AzoSans", sans-serif !important;
   color: #212b36 !important;
 }
@@ -433,4 +469,8 @@ body::after {
   display: flex;
   margin-left: 4vw;
   margin-top: 20px;
+}
+
+.margin-top-collect {
+  margin-top: 50px;
 }

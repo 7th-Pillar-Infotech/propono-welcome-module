@@ -48,37 +48,63 @@
           case "collect":
             content = `
             <div class="friend-container">
-                <div>
+              <div>
                   <div id="welcome-text-section-container" class="welcome-text-section-container">
-                    <div id="welcome-text-section" class="welcome-text-section"></div>
+                      <div id="welcome-text-section" class="welcome-text-section"></div>
                   </div>
-                    <div class="compare-image-container">
-                        <div id="welcome-image" class="welcome-image"></div>
-                    </div>
-                    <p class="friend-sub-header align">Your personal restaurant guide<br/>powered by friends and foodies.</p>
-                </div>
-                <div class="collect-main-container">
-                   <div class="collect-main"></div>
-                </div>
-                <div>
-                    <div class="collect-svg-container">
-                        <div id="collect-image" class="collect-image"></div>
-                        <div id="collect-Introducing" class="collect-Introducing">Introducing</div>
-                        <div id="collect-top-left-svg" class="collect-top-left-svg"></div>
-                        <div id="collect-easy-place" class="collect-easy-place">Its easy to add place you<br/>want to remember. It's like<br/>a bookmark.</div>
-                        <div id="collect-tap-to-try" class="collect-tap-to-try">Just tap to add to your<br/>"Want to Try" album</div>
-                        <div id="collect-custom-album" class="collect-custom-album">...or any custom<br/>album you've created.</div>
-                        <div id="collect-your-saved-place" class="collect-your-saved-place">Your saved places automatically<br/>pop up in searches and stand out,<br/>ensuring <b>once collected, never<br/>forgetten.</b></div>
-                    </div>
-                </div>    
-                <div class="friend-footer">
-                    <button class="button-large" onclick="switchTab('friends')">Friend Power
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
+                  <div class="compare-image-container">
+                      <div id="welcome-image" class="welcome-image"></div>
+                  </div>
+                  <p class="friend-sub-header align">Your personal restaurant guide<br/>powered by friends and foodies.</p>
+              </div>
+              
+              <div class="collect-main-container">
+                  <div class="collect-main"></div>
+              </div>
+
+              <div class="top-main">
+                  <div id="welcome-image-left" class="welcome-image-left"></div> 
+                  <div class="collect-top-right">
+                      <div class="collect-introducing">
+                          Introducing
+                      </div>
+                      <div class="collect-button-height"></div>  
+                      <div class="collect-personal-restaurant">
+                          It's easy to add places you<br/>want to remember. It's like<br/>a bookmark.
+                      </div> 
+                  </div> 
+              </div>                  
+
+              <div class="colect-restaurant-card-main">
+                  <div class="colect-restaurant-card-main-img-container">
+                      <div class="colect-restaurant-card-main-img"></div>
+                  </div>                      
+              </div>   
+
+              <div class="colect-modal-card-main">
+                  <div class="colect-modal-card-main-img-container">
+                      <div class="colect-modal-card-main-img"></div>
+                  </div>    
+                  <p class="collect-modal-text">...or any custom<br/>album you've created.</p>                  
+              </div>    
+              
+              <div class="colect-album-card-main">
+                  <div class="colect-album-card-main-img-container">
+                      <div class="colect-album-card-main-img"></div>
+                  </div>    
+                  <p class="collect-album-text">Your saved places automatically<br/>pop up in searches and stand out,<br/>ensuring <b>once collected, never<br/>forgotten.</b></p>                  
+              </div>    
+
+              <div class="friend-footer">
+                  <button class="button-large" onclick="switchTab('friends')">
+                      Friend Power
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </button>
+              </div>
             </div>
+
             `;
             heading = "Collect";
             break;
@@ -213,6 +239,8 @@
           "./assets/Check-in-tab.png",
           "./assets/Compare-button.png",
           "./assets/Compare-full.png",
+          "./assets/Collect-album-custom.png",
+          "./assets/Collect-modal.png",
         ];
 
         imagePaths.forEach((path) => {
