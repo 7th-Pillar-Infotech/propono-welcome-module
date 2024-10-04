@@ -282,8 +282,8 @@ body::after {
 
 .colect-restaurant-card-main-img {
   width: 100%;
-  aspect-ratio: 5/4;
-  background-image: url("./assets/Group\ 47493.svg");
+  aspect-ratio: 5/3.8;
+  background-image: url("./assets/Collect-click.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -296,6 +296,7 @@ body::after {
 
 .colect-modal-card-main-img-container {
   width: 100vw !important;
+  margin-top: 10px;
 }
 
 .colect-modal-card-main-img {
