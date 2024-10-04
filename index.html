@@ -47,164 +47,164 @@
         switch (tab) {
           case "collect":
             content = `
-            <div class="friend-container position-relative">
-              <div class="collect-button-height-absolute"></div>
-          
-              <div>
-                  <div id="welcome-text-section-container" class="welcome-text-section-container">
-                      <div id="welcome-text-section" class="welcome-text-section"></div>
-                  </div>
-                  <div class="compare-image-container">
-                      <div id="welcome-image" class="welcome-image"></div>
-                  </div>
-                  <p class="friend-sub-header align">Your personal restaurant guide<br/>powered by friends and foodies.</p>
-              </div>
-              
-              <div class="collect-main-container">
-                  <div class="collect-main"></div>
-              </div>
+                <div class="friend-container">
 
-              <div class="top-main">
-                  <div id="welcome-image-left" class="welcome-image-left"></div> 
-                  <div class="collect-top-right">
-                      <div class="collect-introducing">
-                          Introducing
+                  <div>
+                      <div id="welcome-text-section-container" class="welcome-text-section-container">
+                          <div id="welcome-text-section" class="welcome-text-section"></div>
                       </div>
-                      <div class="collect-button-height"></div>  
-                      <div class="collect-personal-restaurant">
-                          It's easy to add places you<br/>want to remember. It's like<br/>a bookmark.
-                      </div> 
-                  </div> 
-              </div>                  
+                      <div class="compare-image-container">
+                          <div id="welcome-image" class="welcome-image"></div>
+                      </div>
+                      <p class="friend-sub-header align">Your personal restaurant guide<br/>powered by friends and foodies.</p>
+                  </div>
 
-              <div class="colect-restaurant-card-main">
-                  <div class="colect-restaurant-card-main-img-container">
-                      <div class="colect-restaurant-card-main-img"></div>
-                  </div>                      
-              </div>   
+                  <div class="collect-main-container">
+                      <div class="collect-main"></div>
+                  </div>
 
-              <div class="colect-modal-card-main">
-                  <div class="colect-modal-card-main-img-container">
-                      <div class="colect-modal-card-main-img"></div>
-                  </div>    
-                  <p class="collect-modal-text">...or any custom<br/>album you've created.</p>                  
-              </div>    
-              
-              <div class="colect-album-card-main">
-                  <div class="colect-album-card-main-img-container">
-                      <div class="colect-album-card-main-img"></div>
-                  </div>    
-                  <p class="collect-album-text">Your saved places automatically<br/>pop up in searches and stand out,<br/>ensuring <b>once collected, never<br/>forgotten.</b></p>                  
-              </div>    
+                  <div class="top-main">
+                      <div id="welcome-image-left" class="welcome-image-left"></div>
+                      <div class="collect-top-right">
+                          <div class="collect-introducing position-relative">
+                              Introducing
+                              <div class="collect-button-height-absolute"></div>
+                          </div>
+                          <div class="collect-button-height"></div>
+                          <div class="collect-personal-restaurant">
+                              It's easy to add places you<br/>want to remember. It's like<br/>a bookmark.
+                          </div>
+                      </div>
+                  </div>
 
-              <div class="friend-footer">
-                  <button class="button-large" onclick="switchTab('friends')">
-                      Friend Power
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                  </button>
-              </div>
-            </div>
+                  <div class="colect-restaurant-card-main">
+                      <div class="colect-restaurant-card-main-img-container">
+                          <div class="colect-restaurant-card-main-img"></div>
+                      </div>
+                  </div>
 
-            `;
+                  <div class="colect-modal-card-main">
+                      <div class="colect-modal-card-main-img-container">
+                          <div class="colect-modal-card-main-img"></div>
+                      </div>
+                      <p class="collect-modal-text">...or any custom<br/>album you've created.</p>
+                  </div>
+
+                  <div class="colect-album-card-main">
+                      <div class="colect-album-card-main-img-container">
+                          <div class="colect-album-card-main-img"></div>
+                      </div>
+                      <p class="collect-album-text">Your saved places automatically<br/>pop up in searches and stand out,<br/>ensuring <b>once collected, never<br/>forgotten.</b></p>
+                  </div>
+
+                  <div class="friend-footer">
+                      <button class="button-large" onclick="switchTab('friends')">
+                          Friend Power
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </button>
+                  </div>
+                </div>
+
+                `;
             heading = "Collect";
             break;
           case "friends":
             content = `
-            <div class="friend-container">
-             <div>
-                <p class="friend-header">Propono shines brighter <br/> with friends</p>
-                <div class="friend-image-container">
-                    <div id="friend-image" class="friend-image"></div>
+                <div class="friend-container">
+                 <div>
+                    <p class="friend-header">Propono shines brighter <br/> with friends</p>
+                    <div class="friend-image-container">
+                        <div id="friend-image" class="friend-image"></div>
+                    </div>
+                    <p class="friend-sub-header">Connect with friends and share favorite <br/> albums for instant inspiration from a source <br/> you trust.</p>
+                 </div>
+                  <div>
+                     <img src="./assets/Album-following.png" class="responsive-img" alt="Album Following" />
+                     <p class="friend-sub-header-small">When browsing and searching, you'll<br/>your friend's trusted review first.</p>
+                    <img src="./assets/Friend-rating.png" class="responsive-img" alt="Friend Rating" />
+                 </div>
+                 <div class="friend-footer">
+                     <p class="friend-sub-header-small">Your <b class="extra-bold">taste buds</b> (aka your foodie friends)<br/> are just a tap away.</p>
+                     <button class="button-large" onclick="switchTab('critics')">Critics' Choices
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </button>
+                 </div>
                 </div>
-                <p class="friend-sub-header">Connect with friends and share favorite <br/> albums for instant inspiration from a source <br/> you trust.</p>
-             </div>
-              <div>
-                 <img src="./assets/Album-following.png" class="responsive-img" alt="Album Following" />
-                 <p class="friend-sub-header-small">When browsing and searching, you'll<br/>your friend's trusted review first.</p>
-                <img src="./assets/Friend-rating.png" class="responsive-img" alt="Friend Rating" />
-             </div>
-             <div class="friend-footer">
-                 <p class="friend-sub-header-small">Your <b class="extra-bold">taste buds</b> (aka your foodie friends)<br/> are just a tap away.</p>
-                 <button class="button-large" onclick="switchTab('critics')">Critics' Choices
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                 </button>
-             </div>
-            </div>
-            `;
+                `;
             heading = "Friend Power";
             break;
           case "critics":
             content = `
-               <div class="friend-container">
-             <div>
-                <p class="friend-header">Pro reviews a tap away</p>
-                <p class="friend-sub-header">We've pulled together reviews from top critics<br/>like Michelin Guide, Eater, New York Times,<br/>and more</p>
-             </div>
-              <div>
-                 <img src="./assets/Critics-publications.png" class="responsive-img" alt="Album Following" />
-                 <p class="comapre-sub-header-small">Get a taste of expert opinios to consider<br/>when making your dining decisions</p>
-                <img src="./assets/POI-critics.png" class="responsive-img" alt="Friend Rating" />
-                 <p class="critics-sub-header-small">...and link through<br/>to the full review.</p>
-                 <img src="./assets/Critics-list.png" class="responsive-img margin-bottom" alt="Friend Rating" />
-             </div>
-             <div class="friend-footer">
-                 <button class="button-large" onclick="switchTab('checkin')">Collect Memories
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                 </button>
-             </div>
-            </div>
-            `;
+                   <div class="friend-container">
+                 <div>
+                    <p class="friend-header">Pro reviews a tap away</p>
+                    <p class="friend-sub-header">We've pulled together reviews from top critics<br/>like Michelin Guide, Eater, New York Times,<br/>and more</p>
+                 </div>
+                  <div>
+                     <img src="./assets/Critics-publications.png" class="responsive-img" alt="Album Following" />
+                     <p class="comapre-sub-header-small">Get a taste of expert opinios to consider<br/>when making your dining decisions</p>
+                    <img src="./assets/POI-critics.png" class="responsive-img" alt="Friend Rating" />
+                     <p class="critics-sub-header-small">...and link through<br/>to the full review.</p>
+                     <img src="./assets/Critics-list.png" class="responsive-img margin-bottom" alt="Friend Rating" />
+                 </div>
+                 <div class="friend-footer">
+                     <button class="button-large" onclick="switchTab('checkin')">Collect Memories
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </button>
+                 </div>
+                </div>
+                `;
             heading = "Critics' Choice";
             break;
           case "checkin":
             content = `
-              <div class="checkin-container">
-             <div class ="check-in-sub-container">
-                <div class="friend-image-container center">
-                    <div id="check-in-image" class="check-in-image center"></div> 
+                  <div class="checkin-container">
+                 <div class ="check-in-sub-container">
+                    <div class="friend-image-container center">
+                        <div id="check-in-image" class="check-in-image center"></div>
+                    </div>
+                      <p class="checkin-header memories-font-size">Memories.</p>
+                 </div>
+                  <div>
+                     <p class="friend-sub-header-small checkin-text">Use <b>Check-in</b> to build your personal food map</br>and remember standout places.</p>
+                     <img src="./assets/Checkin-modal.png" class="responsive-img" alt="Album Following" />
+                     <p class="friend-sub-header-small checkin-text-two">Add a <b>memory</b> - and <b>tag</b> the friends that <br/>made it memorable.</p>
+                      <img src="./assets/Check-in-tab.png" class="responsive-img" alt="Album Following" />
+                 </div>
+                 <div class="friend-footer">
+                     <button class="button-large" onclick="switchTab('compare')">Compare & Share
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </button>
+                 </div>
                 </div>
-                  <p class="checkin-header memories-font-size">Memories.</p>
-             </div>
-              <div>
-                 <p class="friend-sub-header-small checkin-text">Use <b>Check-in</b> to build your personal food map</br>and remember standout places.</p>
-                 <img src="./assets/Checkin-modal.png" class="responsive-img" alt="Album Following" />
-                 <p class="friend-sub-header-small checkin-text-two">Add a <b>memory</b> - and <b>tag</b> the friends that <br/>made it memorable.</p>
-                  <img src="./assets/Check-in-tab.png" class="responsive-img" alt="Album Following" />
-             </div>
-             <div class="friend-footer">
-                 <button class="button-large" onclick="switchTab('compare')">Compare & Share
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                 </button>
-             </div>
-            </div>
-            `;
+                `;
             heading = "Check-In";
             break;
           case "compare":
             content = `
-              <div class="friend-container">
-             <div>
-                <p class="friend-header">Considering a few spots?</p>
-                <div class="compare-image-container">
-                    <div id="comapre-image" class="comapre-image"></div>
+                  <div class="friend-container">
+                 <div>
+                    <p class="friend-header">Considering a few spots?</p>
+                    <div class="compare-image-container">
+                        <div id="comapre-image" class="comapre-image"></div>
+                    </div>
+                    <p class="friend-sub-header">Click the compare button on place you're<br/>Considering</p>
+                 </div>
+                  <div>
+                     <img src="./assets/Compare-button.png" class="responsive-img" alt="Album Following" />
+                     <p class="comapre-sub-header-small">And when you're ready, view <br/>you're options side-by-side.</p>
+                    <img src="./assets/Compare-full.png" class="responsive-img margin-bottom" alt="Friend Rating" />
+                 </div>
                 </div>
-                <p class="friend-sub-header">Click the compare button on place you're<br/>Considering</p>
-             </div>
-              <div>
-                 <img src="./assets/Compare-button.png" class="responsive-img" alt="Album Following" />
-                 <p class="comapre-sub-header-small">And when you're ready, view <br/>you're options side-by-side.</p>
-                <img src="./assets/Compare-full.png" class="responsive-img margin-bottom" alt="Friend Rating" />
-             </div>
-            </div>
-            `;
+                `;
             heading = "Compare";
             break;
         }
@@ -251,6 +251,7 @@
           img.src = path;
         });
       }
+
       document.addEventListener("DOMContentLoaded", () => {
         preloadImages();
         updateContent("collect");
