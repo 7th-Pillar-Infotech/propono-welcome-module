@@ -36,7 +36,7 @@ body::after {
     url("./assets/Check-in-photo.png") url("./assets/Comparebutton.svg")
     url("./assets/Welcome\ to\ Propono.png") url("./assets/Group\ 47493.svg")
     url("./assets/Introducing.svg") url("./assets/Collect-modal.png")
-    url("./assets/Collect-album-custom.png");
+    url("./assets/Collect-album-custom.png") url("./assets/Collect-click.png");
 }
 
 .container {
