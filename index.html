@@ -81,6 +81,7 @@
                       <div class="colect-restaurant-card-main-img-container">
                           <div class="colect-restaurant-card-main-img"></div>
                       </div>
+                      <p class="collect-restaurant-text">Just tap to add to your<br/>"Want to Try" album</p>
                   </div>
 
                   <div class="colect-modal-card-main">
@@ -118,15 +119,15 @@
                     <div class="friend-image-container">
                         <div id="friend-image" class="friend-image"></div>
                     </div>
-                    <p class="friend-sub-header">Connect with friends and share favorite <br/> albums for instant inspiration from a source <br/> you trust.</p>
+                    <p class="friend-sub-header text-center">Connect with friends and share favorite <br/> albums for instant inspiration from a source <br/> you trust.</p>
                  </div>
                   <div>
                      <img src="./assets/Album-following.png" class="responsive-img" alt="Album Following" />
-                     <p class="friend-sub-header-small">When browsing and searching, you'll<br/>your friend's trusted review first.</p>
+                     <p class="friend-sub-header-small text-center">When browsing and searching, you'll<br/>your friend's trusted review first.</p>
                     <img src="./assets/Friend-rating.png" class="responsive-img" alt="Friend Rating" />
                  </div>
                  <div class="friend-footer">
-                     <p class="friend-sub-header-small">Your <b class="extra-bold">taste buds</b> (aka your foodie friends)<br/> are just a tap away.</p>
+                     <p class="friend-sub-header-small text-center">Your <b class="extra-bold">taste buds</b> (aka your foodie friends)<br/> are just a tap away.</p>
                      <button class="button-large" onclick="switchTab('critics')">Critics' Choices
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -141,8 +142,8 @@
             content = `
                    <div class="friend-container">
                  <div>
-                    <p class="friend-header">Pro reviews a tap away</p>
-                    <p class="friend-sub-header">We've pulled together reviews from top critics<br/>like Michelin Guide, Eater, New York Times,<br/>and more</p>
+                    <p class="friend-header">Professional reviews & ratings at your fingertips</p>
+                    <p class="friend-sub-header text-center">We've pulled together reviews from top critics<br/>like Michelin Guide, Eater, New York Times,<br/>and more</p>
                  </div>
                   <div>
                      <img src="./assets/Critics-publications.png" class="responsive-img" alt="Album Following" />
@@ -172,9 +173,9 @@
                       <p class="checkin-header memories-font-size">Memories.</p>
                  </div>
                   <div>
-                     <p class="friend-sub-header-small checkin-text">Use <b>Check-in</b> to build your personal food map</br>and remember standout places.</p>
+                     <p class="friend-sub-header-small checkin-text text-center">Use <b>Check-in</b> to build your personal food map</br>and remember standout places.</p>
                      <img src="./assets/Checkin-modal.png" class="responsive-img" alt="Album Following" />
-                     <p class="friend-sub-header-small checkin-text-two">Add a <b>memory</b> - and <b>tag</b> the friends that <br/>made it memorable.</p>
+                     <p class="friend-sub-header-small checkin-text-two text-center">Add a <b>memory</b> - and <b>tag</b> the friends that <br/>made it memorable.</p>
                       <img src="./assets/Check-in-tab.png" class="responsive-img" alt="Album Following" />
                  </div>
                  <div class="friend-footer">
@@ -196,18 +197,26 @@
                     <div class="compare-image-container">
                         <div id="comapre-image" class="comapre-image"></div>
                     </div>
-                    <p class="friend-sub-header">Click the compare button on place you're<br/>Considering</p>
+                    <p class="friend-sub-header text-center">Click the compare button on places you’re considering.</p>
                  </div>
                   <div>
-                     <img src="./assets/Compare-button.png" class="responsive-img" alt="Album Following" />
-                     <p class="comapre-sub-header-small">And when you're ready, view <br/>you're options side-by-side.</p>
-                    <img src="./assets/Compare-full.png" class="responsive-img margin-bottom" alt="Friend Rating" />
+                    <img src="./assets/Compare-button.png" class="responsive-img" alt="Album Following" />
+                    <p class="comapre-sub-header-small text-center">And when you're ready, view <br/>you're options side-by-side.</p>
+                    <div style="position: relative">
+                      <div class="compare-overlay-text">
+                        <p style="margin: 0px;font-size: 12px;text-align: left;color: #333;">
+                          Compare places on over a dozen attributes to pick the best option. And it’s easy to share with friends to get their opinion.
+                        </p>
+                      </div>
+                      <img src="./assets/Compare-full.png" class="responsive-img margin-bottom" alt="Friend Rating" />
+                    </div>
                  </div>
                 </div>
                 `;
             heading = "Compare";
             break;
         }
+
         window.scrollTo({
           top: 0,
           behavior: "smooth",

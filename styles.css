@@ -196,7 +196,7 @@ body::after {
 }
 
 .check-in-image {
-  width: 200px;
+  width: 180px;
   height: 100px;
   margin-left: 29px;
   background-image: url("./assets/Check-in-photo.png");
@@ -296,6 +296,14 @@ body::after {
   padding-left: 3%;
   padding-right: 3%;
 }
+.collect-restaurant-text {
+  position: absolute;
+  font-size: 13px;
+  left: 30px;
+  bottom: 0px;
+  color: #212b36 !important;
+  font-family: "AzoSans", sans-serif !important;
+}
 
 .colect-modal-card-main-img-container {
   width: 100vw !important;
@@ -314,7 +322,8 @@ body::after {
   text-align: start;
   font-size: 13px;
   padding-left: 30px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   color: #212b36 !important;
   font-family: "AzoSans", sans-serif !important;
 }
@@ -372,7 +381,7 @@ body::after {
   font-size: 13px;
   color: #212b36 !important;
   text-align: start;
-  margin-top: 0 !important;
+  margin-top: -30px !important;
   font-weight: 500;
   padding-left: 12px;
   margin-left: 50px;
@@ -398,12 +407,12 @@ body::after {
 
 .friend-container {
   padding-top: 20px;
-  background-color: #f9f9f9;
+  background-color: #f4f6f8;
 }
 
 .checkin-container {
   padding-top: 20px;
-  background-color: #f9f9f9;
+  background-color: #f4f6f8;
 }
 
 .check-in-sub-container {
@@ -466,6 +475,9 @@ body::after {
   font-family: "AzoSans", sans-serif !important;
   padding-top: 20px;
 }
+.text-center {
+  text-align: center;
+}
 
 .collect-main {
   border-bottom: 1px solid rgb(212, 212, 212);
@@ -501,4 +513,16 @@ body::after {
 
 .collect-button-height {
   min-height: 60px !important;
+}
+
+.compare-overlay-text {
+  position: absolute;
+  width: 100px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid #6744c9;
+  right: 30px;
+  top: 34%;
+  box-shadow: -1px -1px 30px -8px rgba(0, 0, 0, 0.75);
 }
