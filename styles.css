@@ -519,3 +519,8 @@ body::after {
   top: 34%;
   box-shadow: -1px -1px 30px -8px rgba(0, 0, 0, 0.75);
 }
+
+.padding-horizontal {
+  padding-left: 10px;
+  padding-right: 10px;
+}
