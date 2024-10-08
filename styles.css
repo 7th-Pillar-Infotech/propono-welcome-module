@@ -266,80 +266,66 @@ body::after {
   flex-direction: column;
 }
 
-.colect-restaurant-card-main {
+.collect-text-common {
+  font-size: 13px;
+  color: #212b36 !important;
+  text-align: start;
+  font-weight: 500;
+}
+
+.colect-one {
+  width: 100vw !important;
   position: relative;
-  padding-left: 3%;
-  padding-right: 3%;
 }
 
-.colect-restaurant-card-main-img-container {
+.collect-one-img {
   width: 100%;
-}
-
-.colect-restaurant-card-main-img {
-  width: 100%;
-  aspect-ratio: 5/3.8;
-  background-image: url("./assets/Collect-click.png");
+  aspect-ratio: 5/2.333;
+  background-image: url("./assets/Collect1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.colect-restaurant-card-main {
-  position: relative;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-.collect-restaurant-text {
+.collect-one-text {
   position: absolute;
-  font-size: 13px;
-  left: 30px;
-  bottom: 0px;
-  color: #212b36 !important;
-  font-family: "AzoSans", sans-serif !important;
+  left: 39%;
+  bottom: 30%;
 }
 
-.colect-modal-card-main-img-container {
+.colect-two {
   width: 100vw !important;
-  margin-top: 10px;
 }
 
-.colect-modal-card-main-img {
+.collect-two-img {
   width: 100%;
-  aspect-ratio: 5/2.7;
-  background-image: url("./assets/Collect-modal.png");
+  aspect-ratio: 5/3.843;
+  background-image: url("./assets/Collect2.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.collect-modal-text {
-  text-align: start;
-  font-size: 13px;
-  padding-left: 30px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  color: #212b36 !important;
-  font-family: "AzoSans", sans-serif !important;
-}
-
-.colect-album-card-main-img-container {
+.colect-three {
   width: 100vw !important;
 }
 
-.colect-album-card-main-img {
+.collect-three-img {
   width: 100%;
-  aspect-ratio: 5/1.6;
-  background-image: url("./assets/Collect-album-custom.png");
+  aspect-ratio: 5/3.3;
+  background-image: url("./assets/Collect3.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.collect-album-text {
-  text-align: start;
-  font-size: 13px;
-  padding-left: 20px;
-  color: #212b36 !important;
-  font-family: "AzoSans", sans-serif !important;
-  margin-bottom: 30px;
+.colect-four {
+  width: 100vw !important;
+}
+
+.collect-four-img {
+  width: 100%;
+  aspect-ratio: 5/3.4;
+  background-image: url("./assets/Collect-4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .friend-sub-header {
