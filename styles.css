@@ -537,3 +537,8 @@ body::after {
 .width-lg {
   width: 100vw !important;
 }
+
+.compare-full-img {
+  width: 100vw;
+  height: auto; /* Maintain aspect ratio */
+}
