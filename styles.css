@@ -61,11 +61,12 @@ body::after {
   padding: 12px 0;
   text-align: center;
   background-color: #6744c9;
+  font-family: "AzoSans", sans-serif !important;
   color: white;
   border: none !important;
   margin: 0 !important;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 4vw;
   position: relative;
 }
 .tab-button:not(:last-child)::after {
@@ -148,7 +149,7 @@ body::after {
   border-top: #e5d7ff;
 }
 .content-heading-text {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
   color: #6744c9;
 }
@@ -164,10 +165,10 @@ body::after {
 }
 
 .friend-header {
-  font-size: 22px;
+  font-size: 7vw;
   color: #6744c9 !important;
   font-weight: 600;
-  margin: 0 0 10px; /* Reduced margin below */
+  margin: 0 0 10px;
 }
 
 .checkin-header {
@@ -175,10 +176,10 @@ body::after {
   font-size: 22px;
   color: #6744c9 !important;
   font-weight: 600;
-  margin: 0 0 10px; /* Reduced margin below */
-  bottom: 10px; /* Adjust as needed */
-  left: 33%;
-  top: 75px;
+  margin: 0 0 10px;
+  bottom: 10px;
+  left: 12%;
+  top: 80%;
 }
 
 .friend-image {
@@ -189,6 +190,7 @@ body::after {
 }
 
 .check-in-image {
+  position: relative;
   width: 180px;
   height: 100px;
   margin-left: 29px;
@@ -253,7 +255,7 @@ body::after {
 
 .collect-personal-restaurant {
   text-align: start;
-  font-size: 13px;
+  font-size: 4vw;
   color: #212b36 !important;
   font-family: "AzoSans", sans-serif !important;
 }
@@ -267,7 +269,7 @@ body::after {
 }
 
 .collect-text-common {
-  font-size: 13px;
+  font-size: 4vw;
   color: #212b36 !important;
   text-align: start;
   font-weight: 500;
@@ -275,10 +277,10 @@ body::after {
 
 .colect-one {
   width: 100vw !important;
-  position: relative;
 }
 
 .collect-one-img {
+  position: relative;
   width: 100%;
   aspect-ratio: 5/2.333;
   background-image: url("./assets/Collect1.png");
@@ -289,7 +291,7 @@ body::after {
 .collect-one-text {
   position: absolute;
   left: 39%;
-  bottom: 30%;
+  top: 65%;
 }
 
 .colect-two {
@@ -297,6 +299,7 @@ body::after {
 }
 
 .collect-two-img {
+  position: relative;
   width: 100%;
   aspect-ratio: 5/3.843;
   background-image: url("./assets/Collect2.png");
@@ -304,11 +307,18 @@ body::after {
   background-size: contain;
 }
 
+.collect-two-text {
+  position: absolute;
+  left: 14%;
+  top: 77%;
+}
+
 .colect-three {
   width: 100vw !important;
 }
 
 .collect-three-img {
+  position: relative;
   width: 100%;
   aspect-ratio: 5/3.3;
   background-image: url("./assets/Collect3.png");
@@ -316,11 +326,18 @@ body::after {
   background-size: contain;
 }
 
+.collect-three-text {
+  position: absolute;
+  left: 10%;
+  top: 80%;
+}
+
 .colect-four {
   width: 100vw !important;
 }
 
 .collect-four-img {
+  position: relative;
   width: 100%;
   aspect-ratio: 5/3.4;
   background-image: url("./assets/Collect-4.png");
@@ -328,9 +345,15 @@ body::after {
   background-size: contain;
 }
 
+.collect-four-text {
+  position: absolute;
+  left: 5%;
+  top: 52%;
+}
+
 .friend-sub-header {
   padding-left: 12px;
-  font-size: 13px;
+  font-size: 4vw;
   color: #212b36 !important;
   text-align: start;
   font-weight: 500;
@@ -338,7 +361,7 @@ body::after {
 }
 
 .friend-sub-header-small {
-  font-size: 13px;
+  font-size: 4vw;
   color: #212b36 !important;
   text-align: start;
   font-weight: 500;
@@ -347,7 +370,7 @@ body::after {
 }
 
 .comapre-sub-header-small {
-  font-size: 13px;
+  font-size: 4vw;
   color: #212b36 !important;
   text-align: start;
   margin-top: 17px;
@@ -357,7 +380,7 @@ body::after {
 }
 
 .critics-sub-header-small {
-  font-size: 13px;
+  font-size: 4vw;
   color: #212b36 !important;
   text-align: start;
   margin-top: -30px !important;
@@ -392,10 +415,6 @@ body::after {
 .checkin-container {
   padding-top: 20px;
   background-color: #f4f6f8;
-}
-
-.check-in-sub-container {
-  position: relative;
 }
 
 .friend-footer {
@@ -509,4 +528,12 @@ body::after {
 .padding-horizontal {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.margin-left-sm {
+  margin-left: 6px;
+}
+
+.width-lg {
+  width: 100vw !important;
 }
