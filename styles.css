@@ -213,8 +213,8 @@ body::after {
 }
 
 .welcome-image {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-image: url("./assets/Welcome-image.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -408,8 +408,8 @@ body::after {
   justify-content: center;
   align-items: center;
   height: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .friend-container {
