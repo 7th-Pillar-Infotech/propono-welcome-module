@@ -237,7 +237,41 @@
         }
       }
 
+      function preloadImages() {
+        urls = [
+          "./logo.svg",
+          "./assets/Friends.svg",
+          "./assets/Check-in-photo.png",
+          "./assets/Comparebutton.svg",
+          "./assets/Welcome to Propono.png",
+          "./assets/Group 47493.svg",
+          "./assets/Introducing.svg",
+          "./assets/Collect-modal.png",
+          "./assets/Collect-album-custom.png",
+          "./assets/Collect1.png",
+          "./assets/Collect2.png",
+          "./assets/Collect3.png",
+          "./assets/Collect-4.png",
+          "./assets/Album-following.png",
+          "./assets/Friend-rating.png",
+          "./assets/Critics-publications.png",
+          "./assets/Compare-button.png",
+          "./assets/Welcome-image.png",
+          "./assets/POI-critics.png",
+          "./assets/Critics-list.png",
+          "./assets/Checkin-modal.png",
+          "./assets/Check-in-tab.png",
+          "./assets/Compare-full.png",
+          "./assets/connecting_line.png",
+        ];
+        urls.forEach((url) => {
+          const img = new Image();
+          img.src = url;
+        });
+      }
+
       document.addEventListener("DOMContentLoaded", () => {
+        preloadImages();
         updateContent("collect");
       });
     </script>
