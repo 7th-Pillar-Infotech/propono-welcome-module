@@ -232,11 +232,8 @@
         );
 
         if (targetButton) {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
           targetButton.click();
+          window.scrollTo(0, 0);
         }
       }
 
