@@ -212,10 +212,10 @@ body::after {
 
 .welcome-text-section {
   width: 100vw;
-  aspect-ratio: 5/1;
-  background-image: url("./assets/Welcome\ to\ Propono.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 70px;
+  /* background-image: url("./assets/Welcome-to-Propono.png"); */
+  /* background-repeat: no-repeat;
+  background-size: contain; */
 }
 
 .welcome-text-section-container {
